@@ -1,0 +1,194 @@
+{
+    "mcq": [
+        {
+            "id": 1,
+            "question": "How does Angular 4 improved error handling, when an error is caused by something in a template?",
+            "options": [
+                {
+                    "text": "By enabling TypeScript's StrictNullChecks"
+                },
+                {
+                    "text": "By creating flattened versions of Angular modules",
+                    "corret": true
+                },
+                {
+                    "text": "By generating source maps in terms of original template"
+                },
+                {
+                    "text": "None of the mentioned"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": " The . . . . . decorator allows us to define the pipe name that is globally available for use in any template in the across application?",
+            "options": [
+                {
+                    "text": "pipeName"
+                },
+                {
+                    "text": "pipeDeco"
+                },
+                {
+                    "text": "Pipe",
+                    "corret": true
+                },
+                {
+                    "text": "None"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Observables help you manage . . . . . . . . data?",
+            "options": [
+                {
+                    "text": "synchronous"
+                },
+                {
+                    "text": "asynchronous",
+                    "corret": true
+                },
+                {
+                    "text": "Both asynchronous & synchronous"
+                },
+                {
+                    "text": "None of above"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": " Where would you put it?",
+            "options": [
+                {
+                    "text": "In the Component"
+                },
+                {
+                    "text": "In the Template"
+                },
+                {
+                    "text": "In the Injectable decorator",
+                    "corret": true
+                },
+                {
+                    "text": "In the module"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": " How would you display a list of Employees on a webpage along with where they were in the list?",
+            "options": [
+                {
+                    "text": "Loop through and print the index"
+                },
+                {
+                    "text": "Loop through and print the employees"
+                },
+                {
+                    "text": "Pass both the index and the employee to a web service"
+                },
+                {
+                    "text": "Loop through and print the index and the employee",
+                    "corret": true
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": " If you chain multiple pipes together, they are executed",
+            "options": [
+                {
+                    "text": "in parallel"
+                },
+                {
+                    "text": "LIFO order"
+                },
+                {
+                    "text": "in the order in which you specify them",
+                    "corret": true
+                },
+                {
+                    "text": "None of above"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "The number pipe is location sensitive, which means that the same format argument will produce differently formatted results based on the . . . . . . .",
+            "options": [
+                {
+                    "text": "user's locale setting",
+                    "corret": true
+                },
+                {
+                    "text": "user's format setting"
+                },
+                {
+                    "text": "user's currency setting"
+                },
+                {
+                    "text": "All of above"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "How would you retrieve a list of items from a server's URL?",
+            "options": [
+                {
+                    "text": "Create a URL transaction",
+                    "corret": true
+                },
+                {
+                    "text": "Use the HTTP get method"
+                },
+                {
+                    "text": "Use an HTTP packagee"
+                },
+                {
+                    "text": "Create a get SQL statement"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": " Which of the following is not built-in pipe in Angular?",
+            "options": [
+                {
+                    "text": "DatePipe"
+                },
+                {
+                    "text": "CurrencyPipe"
+                },
+                {
+                    "text": "DataPipe",
+                    "corret": true
+                },
+                {
+                    "text": "PercentPipe"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "What is controller in MVC?",
+            "options": [
+                {
+                    "text": "ng-hide directive can show a given control."
+                },
+                {
+                    "text": "Both of the above.",
+                    "corret": true
+                },
+                {
+                    "text": "ng-hide directive can hide a given control."
+                },
+                {
+                    "text": "None of the above"
+                }
+            ]
+        }
+    ]
+}

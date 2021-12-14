@@ -1,0 +1,17 @@
+<div class="container bg-light py-3">
+    <h1 class="display-5 text-center fw-bold ">Welcome Online Test</h1>
+    <p class="col-md-8 fs-4">This Test will contains totla 10 questions. Each question holds 1 mark</p>
+    <h4>Rules :</h4>
+    <ul>
+        <li>Current Question gives you 1 mark</li>
+        <li>Incurrent Question gives to -1/2 mark</li>
+        <li>You will have 30 sec to answer each Question</li>
+        <li>If You Refereshing the page Test Will Re-Start</li>
+    </ul>
+    <h1 style="font-family:cursive;text-align: center;">All the best!! <i class="fas fa-comment-smile fa-2x"></i></h1>
+    <div class="col-md-4 my-2">
+        <label class="text fw-bold fs-5">Enter You Name :</label>
+        <input type="text" class="form-control" name="name" #name>
+    </div>
+    <button class="btn btn-primary btn-lg mx-2" routerLink="/question" (click)="startTest()">Start the Test</button>
+</div>

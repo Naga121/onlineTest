@@ -1,0 +1,85 @@
+<div class="container mt-2">
+  <div class="card shadow-lg mb-1">
+    <div class="d-flex justify-content-between p-3">
+      <div class="image">
+        <img src="assets/img1.png" width="80" alt="logo1" />
+      </div>
+      <div class="text-header ml-3">
+        <h4 style="font-family: cursive">Ui & Angular Online test!</h4>
+        <span style="font-size: initial">welcome user:</span>
+        <span class="text-danger fw-bold">{{ name }}</span>
+      </div>
+    </div>
+  </div>
+  <ng-container *ngIf="!testCompleted">
+    <div class="card shadow-lg mb-1">
+      <div class="d-flex justify-content-around mt-1">
+        <div class="score">
+          <h5>{{ marks }} marks</h5>
+        </div>
+        <div class="question-remain">
+          <span style="font-style: initial">
+            question : {{ currentQuestion + 1 }}/{{ questions.length }}
+          </span>
+        </div>
+        <div class="timer">
+          <h6 class="text-danger">
+            {{ counter }}sec <i class="far fa-stopwatch fa-1x fs-6"></i>
+          </h6>
+        </div>
+      </div>
+      <div class="progress m-3">
+        <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+          [ngStyle]="{ width: progress + '%' }" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+          progress
+        </div>
+      </div>
+    </div>
+    <div class="card shadow-lg mb-1 pt-2">
+      <div class="d-flex justify-content-left p-3">
+        <div class="questionId m-2">
+          <h4>{{ questions[currentQuestion]?.id }}) &nbsp;</h4>
+        </div>
+        <div class="questaion m-2">
+          <h5>{{ questions[currentQuestion]?.question }}</h5>
+        </div>
+      </div>
+      <div class="options mx-2">
+        <ol type="A" class="mb-3 mx-3">
+          <div class="form-check mx-2 mr-3 text-align-center" appChange [isCorrect]="option.corret"
+            *ngFor="let option of questions[currentQuestion]?.options">
+            <input type="radio" class="form-check-input mr-3" name="answer" value="{{ option.text }}"
+              (click)="answer(currentQuestion + 1, option)" />
+            <li class="click mx-3">
+              <p class="h6">{{ option.text }}</p>
+            </li>
+          </div>
+        </ol>
+
+        <div class="d-flex justify-content-around mx-4 m-3">
+          <button class="btn btn-md" [disabled]="currentQuestion === 0" (click)="prevQuestion()">
+            <i class="fas text-primary fa-chevron-left fa-2x"></i>
+          </button>
+          <!-- <button class="btn  btn-md"><i class="fas text-primary fa-sync fa-2x"></i></button> -->
+          <button class="btn btn-md" (click)="nextQuestion()">
+            <i class="fas text-primary fa-chevron-right fa-2x"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="testCompleted">
+    <div class="card bg-light mx-3">
+      <div class="row d-flex justify-content-between  mt-2">
+        <img src="assets/img3.gif" class="col-md-6 col-sm-12 mx-auto mx-2" alt="imd3" width="120px" height="250px">
+        <div class="col-md-6 col-sm-12 result text-center ">
+          <h4>Congratulation!! <br> You have Completed the Test. <br> Below is Your Result :</h4>
+          <p>Total Questions : {{questions.length}}</p>
+          <p>Total Correct Answered : {{currectAnswer}}</p>
+          <p>Total wrong Answered :{{inCurrectAnswer}}</p>
+          <p>Total Score : {{marks}} marks </p>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>
